@@ -1,0 +1,5 @@
+#Python binary
+*.pyc
+env_challenge/
+__pycache__/
+node_modules/
