@@ -8,7 +8,7 @@ The objective is to implement the layout.png and the funtionalities below:
 - Implement the search on the list
 - It is NOT necessary to implement the login feature!!!!
  
-All resources you need is located at source folder.
+All resources you need is located at designs folder.
 
 To make it easier to you, We've already setup a python web project that returns the content to populate the list. However feel free to implement in the way you feel confident.
 
