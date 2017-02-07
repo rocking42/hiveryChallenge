@@ -15,12 +15,12 @@ To make it easier to you, We've already setup a python web project that returns 
 When you finish, please, send us the link from your github to be evaluated.
 
 We need to be able to run your code through these steps:
-
+``` 
 1) git clone <your project>
 2) cd <your project>
 3) run command to install dependencies
 4) run command to execute the application
-
+```
 To simplify, you can consider that we have installed in our machine python, Node, Gulp
 
 In the end, your solution must run in a Mac OS or Linux system.
