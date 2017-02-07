@@ -3,14 +3,14 @@
 The objective is to implement the layout.png and the funtionalities below:
 
 - You can order the list by name, outlet number, market and author
-- The list just shows the first ten registers, the remaining content needs to be displayed when you scroll down
+- The list just shows the first ten registers, the remaining content needs to be displayed when you scroll down, for that reason you will need to increase the size of the response (the json returned)
 - The list header must be fixed on the page
 - Implement the search on the list
 - It is NOT necessary to implement the login feature!!!!
  
 All resources you need is located at designs folder.
 
-To make it easier to you, We've already setup a python web project that returns the content to populate the list. However feel free to implement in the way you feel confident.
+To make it easier to you, We've already setup a python web project that returns the content to populate the list. However feel free to implement in the way you feel confident and add more items to the list
 
 When you finish, please, send us the link from your github to be evaluated.
 
