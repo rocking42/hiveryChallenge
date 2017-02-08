@@ -4,10 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../assets/style.css">
   <title>Hivery display</title>
 </head>
 <body>
-  <h1>Hello</h1>
+  <!-- HEADING -->
+  <div class="navbar">
+    <h2 class="logo">Hivery</h2>
+    <h3 class="user">Queen Bee</h3>
+  </div>
+  <!-- CONTENT -->
+  <div class="container">
+    <div class="searchHeading">
+      <h2>Saved Planograms</h2>
+      <input type="text" class="searchGrams" placeholder="Search names">
+    </div>
+    <div class="dataContainer">
+      <div class="dataLinks">
+        <!-- LINKS -->
+        <div class="linkCont">
+          <a href="#" data-link="number" style="margin-left:10%" class="normal">
+            number <span><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+          </a>
+        </div>
+        <div class="linkCont">
+          <a href="#" data-link="name" class="normal">
+            name <span><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+          </a>
+        </div>
+        <div class="linkCont">
+          <a href="#" data-link="markets" class="normal">
+            markets <span><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+          </a>
+        </div>
+        <div class="linkCont">
+          <a href="#" data-link="author" class="normal">
+            author <span><i class="fa fa-angle-up" aria-hidden="true"></i></span>
+          </a>
+        </div>
+        <div class="linkCont">
+          <a href="#" class="normal">
+            created at
+          </a>
+        </div>
+      </div>
+      <!-- DATA DISPLAY -->
+      <div class="allCont"></div>
+    </div>
+  </div>
 <script type="text/javascript" src="main_bundle.js"></script></body>
 </html>

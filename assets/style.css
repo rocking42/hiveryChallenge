@@ -12,7 +12,7 @@ html, body {
   /*padding: 2% 2%;*/
   margin-top: 10%;
 }
-
+/* NAV  */
 .navbar {
   padding: 2%;
   border-bottom: 1px solid gainsboro;
@@ -34,6 +34,8 @@ html, body {
   float: right;
 }
 
+/* SEARCH DISPLAY */
+
 .searchHeading {
   margin: 2%;
 }
@@ -48,6 +50,8 @@ html, body {
   float: right;
   padding: 0.4%;
 }
+
+/* SORT LINKS */
 
 .dataLinks {
   padding-bottom: 1%;
@@ -64,9 +68,7 @@ html, body {
   color: lightslategray;
 }
 
-.linkCont > a > span {
-
-}
+/* DATA DISPLAY */
 
 .dataResults {
   background: #ededed;

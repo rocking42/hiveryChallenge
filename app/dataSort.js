@@ -21,10 +21,12 @@ export function searchPlanograms(data, input) {
   return data.filter(machine => machine["name"].toUpperCase().includes(userInput));
 }
 
+// Returns a completed HTML template to be inserted
 export function displayData(data) {
   const templateArr = [];
   let template;
   for (const item of data) {
+    // Default template displayed for each item
     template = `
     <div class="dataResults">
       <p style="position: relative;left: 2%;">${item.number}</p>
