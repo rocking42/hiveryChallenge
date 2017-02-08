@@ -8,10 +8,15 @@ import {
 const data = fs.readFileSync("assets/data/register.json");
 const dataParse = JSON.parse(data)
 
-test("Sorts the data returning the correct first value", () => {
+test("Sorts the data returning the correct first value when given a numerical string", () => {
   const searchCriteria = "number";
-  expect(sortData(dataParse, searchCriteria)[0].number).toBe("04114");
+  expect(sortData(dataParse, searchCriteria)[0][searchCriteria]).toBe("04114");
 });
+
+test("Sorts the data correctly when given an alphabetical character", () => {
+  const searchCriteria = "name";
+  expect(sortData(dataParse, searchCriteria)[0][searchCriteria]).toBe("Double open sideways");
+})
 
 test("Filters Planograms based on userInput", () => {
   const userInput = "EP";
@@ -24,6 +29,5 @@ test("Filtered Planograms is the correct length", () => {
 });
 
 test("displayData returns correct HTML provided the correct data", () => {
-  console.log(displayData(dataParse));
   expect(displayData(dataParse).startsWith('<div class="dataResults">')).toBe(true);
 });

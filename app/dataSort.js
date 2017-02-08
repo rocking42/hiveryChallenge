@@ -1,3 +1,5 @@
+const _ = require("lodash/Collection");
+
 export function sortData(data, sortCriteria) {
   return data.sort((prevMach, nextMach) => {
     // Check for NaN when converting to a number
@@ -17,8 +19,7 @@ export function sortData(data, sortCriteria) {
 // Takes userInput and returns any name that includes the criteria
 export function searchPlanograms(data, input) {
   const userInput = input.toUpperCase();
-  // TODO: Polyfill includes method
-  return data.filter(machine => machine["name"].toUpperCase().includes(userInput));
+  return data.filter(machine => _.includes(machine["name"].toUpperCase(), userInput));
 }
 
 // Returns a completed HTML template to be inserted

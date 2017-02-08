@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "test": "jest",
+    "test-watch": "jest --watch --coverage",
     "start": "webpack-dev-server"
   },
   "repository": {
