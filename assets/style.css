@@ -1,3 +1,70 @@
-body {
-  background: green;
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  /*padding: 2% 2%;*/
+  margin-top: 10%;
+}
+
+.navbar {
+  padding: 2%;
+  border-bottom: 1px solid gainsboro;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.navbar > * {
+  margin: 0;
+  display: inline-block;
+}
+
+.logo {
+  margin-left: 46%;
+}
+
+.user {
+  float: right;
+}
+
+.searchHeading {
+  margin: 2%;
+}
+
+.searchHeading > * {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+.searchGrams {
+  float: right;
+  padding: 0.4%;
+}
+
+.dataLinks {
+  padding-bottom: 1%;
+  border-bottom: 1px solid gainsboro;
+}
+
+.linkCont {
+  width: 19%;
+  display: inline-block;
+  text-align: center;
+}
+
+.linkCont > a {
+  text-decoration: none;
+  color: lightslategray;
+}
+
+.linkCont > a > span {
+  
 }
