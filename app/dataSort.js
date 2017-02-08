@@ -26,10 +26,14 @@ export function displayData(data) {
   let template;
   for (const item of data) {
     template = `
-    <div>
-
+    <div class="dataResults">
+      <p style="position: relative;left: 2%;">${item.number}</p>
+      <p>${item.name}</p>
+      <p>${item.markets}</p>
+      <p>${item.author}</p>
+      <p>${item.created}</p>
     </div>
-    `
+    `;
     templateArr.push(template);
   }
   return templateArr.join("");

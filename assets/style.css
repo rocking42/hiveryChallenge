@@ -57,14 +57,33 @@ html, body {
 .linkCont {
   width: 19%;
   display: inline-block;
-  text-align: center;
 }
 
-.linkCont > a {
+.normal {
   text-decoration: none;
   color: lightslategray;
 }
 
 .linkCont > a > span {
-  
+
+}
+
+.dataResults {
+  background: #ededed;
+}
+
+.dataResults > p {
+  display: inline-block;
+  width: 19%;
+}
+
+.highlighted {
+  text-decoration: underline;
+  color: black;
+}
+
+@media (max-width: 770px) {
+  .container {
+    margin-top: 15%;
+  }
 }
