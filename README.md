@@ -2,6 +2,8 @@
 
 This is my answer to the Hivery coding challenge
 
+The project can be found at [Project](https://rocking42.github.io/hiveryChallenge/dist)
+
 to load this on your system
 ```
 1) git clone <project>
@@ -11,4 +13,4 @@ to load this on your system
 ```
 I've tried to go for a simple modular codebase approach to allow it to have the potential to scale from the start. Testing is set up but not implemented yet however to run the test suite run npm t and it will go through all tests in the __test__ folder.
 
-Good luck!
+Thanks for the great challenge!
