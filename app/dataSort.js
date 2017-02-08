@@ -27,8 +27,7 @@ export function displayData(data) {
   let template;
   for (const item of data) {
     // Default template displayed for each item
-    template = `
-    <div class="dataResults">
+    template = `<div class="dataResults">
       <p style="position: relative;left: 2%;">${item.number}</p>
       <p>${item.name}</p>
       <p>${item.markets}</p>
