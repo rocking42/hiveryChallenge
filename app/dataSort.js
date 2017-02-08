@@ -1,7 +1,7 @@
 const _ = require("lodash/Collection");
 
 export function sortData(data, sortCriteria) {
-  return data.sort((prevMach, nextMach) => {
+  const allData = data.sort((prevMach, nextMach) => {
     // Check for NaN when converting to a number
     if(parseInt(prevMach[sortCriteria]) === parseInt(prevMach[sortCriteria])) {
       return parseInt(prevMach[sortCriteria]) - parseInt(nextMach[sortCriteria]);
@@ -14,12 +14,16 @@ export function sortData(data, sortCriteria) {
       return 1;
     }
   });
+  // Return a maximum of 10 records
+  return allData.length > 10 ? allData.slice(0, 10) : allData;
 }
 
 // Takes userInput and returns any name that includes the criteria
 export function searchPlanograms(data, input) {
   const userInput = input.toUpperCase();
-  return data.filter(machine => _.includes(machine["name"].toUpperCase(), userInput));
+  const allData =  data.filter(machine => _.includes(machine["name"].toUpperCase(), userInput));
+  // Return a maximum of 10 records
+  return allData.length > 10 ? allData.slice(0, 10) : allData;
 }
 
 // Returns a completed HTML template to be inserted

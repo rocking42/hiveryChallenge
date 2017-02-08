@@ -10,7 +10,8 @@ d3_request.json("../assets/data/register.json", (err, data) => {
   if (err) console.log(err);
   // Initially display default data
   const dataCont = document.querySelector(".allCont");
-  dataCont.innerHTML = displayData(data);
+  // Display the first 10 records
+  dataCont.innerHTML = displayData(data.slice(0,10));
 
   const input = document.querySelector(".searchGrams");
 

@@ -23,9 +23,14 @@ test("Filters Planograms based on userInput", () => {
   expect(searchPlanograms(dataParse, userInput)[0].name).toBe("EP Countertop Long_v2");
 });
 
-test("Filtered Planograms is the correct length", () => {
+test("Filtered Planograms outputs a maximum of 10 records", () => {
   const userInput = "EP";
-  expect(searchPlanograms(dataParse, userInput).length).toBe(3);
+  expect(searchPlanograms(dataParse, userInput).length).toBe(10);
+});
+
+test("Filtered Planograms outputs correctly with less than 10 records", () => {
+  const userInput = "LM";
+  expect(searchPlanograms(dataParse, userInput).length).toBe(5);
 });
 
 test("displayData returns correct HTML provided the correct data", () => {

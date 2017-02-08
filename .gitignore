@@ -3,3 +3,4 @@
 env_challenge/
 __pycache__/
 node_modules/
+coverage/
