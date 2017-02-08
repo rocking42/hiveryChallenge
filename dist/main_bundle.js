@@ -2664,7 +2664,8 @@ d3_request.json("../assets/data/register.json", function (err, data) {
   if (err) console.log(err);
   // Initially display default data
   var dataCont = document.querySelector(".allCont");
-  dataCont.innerHTML = (0, _dataSort.displayData)(data);
+  // Display the first 10 records
+  dataCont.innerHTML = (0, _dataSort.displayData)(data.slice(0, 10));
 
   var input = document.querySelector(".searchGrams");
 
@@ -2761,7 +2762,7 @@ exports.displayData = displayData;
 var _ = __webpack_require__(90);
 
 function sortData(data, sortCriteria) {
-  return data.sort(function (prevMach, nextMach) {
+  var allData = data.sort(function (prevMach, nextMach) {
     // Check for NaN when converting to a number
     if (parseInt(prevMach[sortCriteria]) === parseInt(prevMach[sortCriteria])) {
       return parseInt(prevMach[sortCriteria]) - parseInt(nextMach[sortCriteria]);
@@ -2774,14 +2775,18 @@ function sortData(data, sortCriteria) {
       return 1;
     }
   });
+  // Return a maximum of 10 records
+  return allData.length > 10 ? allData.slice(0, 10) : allData;
 }
 
 // Takes userInput and returns any name that includes the criteria
 function searchPlanograms(data, input) {
   var userInput = input.toUpperCase();
-  return data.filter(function (machine) {
+  var allData = data.filter(function (machine) {
     return _.includes(machine["name"].toUpperCase(), userInput);
   });
+  // Return a maximum of 10 records
+  return allData.length > 10 ? allData.slice(0, 10) : allData;
 }
 
 // Returns a completed HTML template to be inserted
